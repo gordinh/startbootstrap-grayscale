@@ -6,9 +6,9 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: black;
+  font-family: FreigSanProBold;
+  color: #8e867e;
+  background-color: white;
 }
 html {
   width: 100%;
@@ -21,8 +21,8 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3b5999;
+  font-family: FaktSlabProMedium;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -52,21 +52,21 @@ a:focus {
 .light {
   font-weight: 400;
 }
-.navbar-custom {
-  margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+#everloop {
+  display: inline;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0px;
+}
+.nav li a:focus,
+.nav li a:hover {
+  text-decoration: underline;
   background-color: black;
 }
-.navbar-custom .navbar-toggle {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 12px;
-}
-.navbar-custom .navbar-toggle:focus,
-.navbar-custom .navbar-toggle:active {
-  outline: none;
+.navbar-custom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
 }
 .navbar-custom .navbar-brand {
   font-weight: 700;
@@ -77,59 +77,15 @@ a:focus {
 .navbar-custom a {
   color: white;
 }
-.navbar-custom .nav li a {
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-.navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
-  outline: none;
-  background-color: transparent;
-}
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-  outline: none;
-  background-color: transparent;
-}
-.navbar-custom .nav li.active {
-  outline: none;
-}
-.navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.navbar-custom .nav li.active a:hover {
-  color: white;
-}
-@media (min-width: 768px) {
-  .navbar-custom {
-    padding: 20px 0;
-    border-bottom: none;
-    letter-spacing: 1px;
-    background: transparent;
-    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  }
-  .navbar-custom.top-nav-collapse {
-    padding: 0;
-    background: black;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-}
 .intro {
-  display: table;
   width: 100%;
-  height: auto;
+  min-height: 615px;
   padding: 100px 0;
   text-align: center;
+  text-shadow: 1px 1px 2px black;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../img/matrix-creator.jpg) center center;
   background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 .intro .intro-body {
   display: table-cell;
@@ -141,10 +97,12 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
+.intro h1 {
+  color: white;
+}
 @media (min-width: 768px) {
   .intro {
-    height: 100%;
-    padding: 0;
+    padding: 100px 0 0 280px;
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
@@ -223,9 +181,8 @@ a:focus {
 .download-section {
   width: 100%;
   padding: 50px 0;
-  color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
+  color: #8e867e;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -238,7 +195,7 @@ a:focus {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px;
+    padding-top: 100px;
   }
   .download-section {
     padding: 100px 0;
@@ -288,6 +245,9 @@ ul.banner-social-buttons {
   }
 }
 footer {
+  font-family: FaktSlabProMedium;
+  color: white;
+  background-color: #1f1f1f;
   padding: 50px 0;
 }
 footer p {
@@ -311,4 +271,15 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+#contact {
+  font-family: FaktSlabProMedium;
+  width: 100%;
+  color: white;
+  background-color: #3b5999;
+  background-size: cover;
+}
+#contact h2 {
+  font-family: FaktSlabProMedium;
+  color: white;
 }
